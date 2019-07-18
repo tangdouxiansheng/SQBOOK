@@ -9,5 +9,5 @@
 (c)module/mySwiper.vue 轮播图组件，可复用，复用时就复制一份该文件，更改相应参数即可；
 
 (c)根目录下新建Vue.config.js正向代理，代理名称为“SQ”
-(c)
+(c)module/foot.vue 页面底部样式组件
 (c)
