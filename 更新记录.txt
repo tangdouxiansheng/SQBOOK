@@ -1,0 +1,13 @@
+(c)src目录下新建module文件夹，存放所有组件与模块；
+
+(c)module/indicator.js 用于请求等待时的信息提示，勿动！！！ 
+
+(c)module/scroll.js 用于监听滚动条事件 自定义指令名称为v-scroll，DOM属性名称为scrolltop；
+
+(c)module/toast.js  用于加载结束后的信息提示 使用方法在文件中有包含；
+
+(c)module/mySwiper.vue 轮播图组件，可复用，复用时就复制一份该文件，更改相应参数即可；
+
+(c)根目录下新建Vue.config.js正向代理，代理名称为“SQ”
+(c)
+(c)
