@@ -12,6 +12,8 @@ import { Indicator } from 'mint-ui';
 Vue.use(MintUI);
 
 
+import './module/indicator'  //引入加载提示框组件
+
 Vue.config.productionTip = false
 
 new Vue({
