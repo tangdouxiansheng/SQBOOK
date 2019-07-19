@@ -12,4 +12,6 @@
 (t)新增/src/module/header.vue文件，公共头部样式组件
 (t)修改/src/view/search.vue文件
 
-（Z）修改/src/view/index.vue文件
+（Z）修改src/view/文件夹下index.vue；Category.vue；Ranking.vue；
+                          BookList.vue；Boy.vue；Girl.vue；
+（Z）修改module/foot.vue；和header.vue文件

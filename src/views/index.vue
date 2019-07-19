@@ -77,7 +77,7 @@
         </div>
         <div class="body_change" @click="change2">
             换一换
-            
+
         </div>
     </div>
     <div class="index_body">
@@ -104,9 +104,11 @@
         </div>
         <div class="body_change" @click="change3">换一换</div>
     </div>
+    <foot/>
   </div>
 </template>
 <script>
+import foot from "../module/foot"
 export default {
     data(){
         return{
@@ -114,6 +116,9 @@ export default {
             girl:[],
             boy:[]
         }
+    },
+    components:{
+        foot
     },
     created(){
         this.getbast();

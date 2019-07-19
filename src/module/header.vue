@@ -37,6 +37,7 @@
         position:fixed;
         top:0;
         background:#fff;
+        border-bottom:1px solid #f3f3f3;
     }
     .fa{
         font-size:0.364rem;

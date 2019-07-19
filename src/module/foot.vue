@@ -26,8 +26,6 @@ footer{
     line-height: .43rem;
     text-align: center;
     background-color: #f0f0f3;
-    position: absolute;
-    bottom: 0;
 }
 .btn{
     background: #00c98d;
