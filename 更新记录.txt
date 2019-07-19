@@ -11,3 +11,7 @@
 (c)根目录下新建Vue.config.js正向代理，代理名称为“SQ”
 (c)
 (c)
+
+(t)修改Vue.config.js文件,新增正向代理
+(t)修改/src/router.js文件，新增头部路由组件
+(t)新增/src/module/header.vue文件，公共头部样式组件

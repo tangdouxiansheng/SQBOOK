@@ -8,6 +8,13 @@ module.exports = {
                 "pathRewrite":{
                     "^/SQ":"/"
                 }
+            },
+            "SS":{
+                "target":"http://read.xiaoshuo1-sm.com",
+                "changeOrigin":true,
+                "pathRewrite":{
+                    "^/SS":"/"
+                }
             }
         }
     }

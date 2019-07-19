@@ -10,6 +10,7 @@ import Category from './views/Category.vue'           //分类
 import Ranking from './views/Ranking.vue'             //排行
 import Search from './views/Search.vue'               //搜索
 import User from './views/User.vue'                   //个人中心
+import Header from './module/header.vue'              //头部公用组件  
 Vue.use(Router)
 
 export default new Router({
@@ -62,6 +63,7 @@ export default new Router({
       name: 'User',
       component: User
     },
+   
     // {
     //   path: '/about',
     //   name: 'about',
