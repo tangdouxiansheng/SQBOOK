@@ -15,3 +15,5 @@
 （Z）修改src/view/文件夹下index.vue；Category.vue；Ranking.vue；
                           BookList.vue；Boy.vue；Girl.vue；
 （Z）修改module/foot.vue；和header.vue文件
+
+(t)修改/src/view/Boy.vue  girl.vue  booklist.vue 文件
