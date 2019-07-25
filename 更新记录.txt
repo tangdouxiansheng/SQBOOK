@@ -42,3 +42,5 @@
 (z)增加\module/AllDetails.vue
 (z)修改router.vue
 (z)修改\src\components/CategoryType.vue
+
+(t)修改了/src/views/Boy.vue 文件
