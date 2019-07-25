@@ -13,6 +13,7 @@ Vue.use(MintUI);
 
 
 import './module/indicator'  //引入加载提示框组件
+import "./module/scroll.js"  //自定义滚动指令
 
 Vue.config.productionTip = false
 
