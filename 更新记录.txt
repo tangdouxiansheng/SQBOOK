@@ -21,3 +21,11 @@
 (t)修改/src/view/index.vue 文件
 (t)新增/src/components/bookdetail.vue 文件
 (t)修改/src/router.vue 文件
+
+(c)更新src/views/User.vue文件  里面集合了登陆注册界面所有内容
+(c)新建mongodb数据库，通过express项目建立后端服务模拟登陆注册，实现前后端分离
+(c)修改src/view/ranking.vue文件，新增了排行榜列表
+(c)src/view/ranking/RankList.vue  新增排行榜列表详情页
+(c)main.js 中引入加载提示框和自定义指令的模块
+(c)router.js中新增排行榜列表详情页路由
+(c)Vue.config.js中新增后端代理路由

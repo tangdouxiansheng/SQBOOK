@@ -15,7 +15,20 @@ module.exports = {
                 "pathRewrite":{
                     "^/SS":"/"
                 }
+            },
+            "HD":{
+                "target":"http://10.9.26.240:3000/users",
+                "changeOrigin":true,
+                "pathRewrite":{
+                    "^/HD":"/"
+                }
             }
         }
-    }
+    },
+   
+       
+           
+        
+   
+
 }
