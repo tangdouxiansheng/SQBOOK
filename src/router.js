@@ -9,10 +9,10 @@ import Girl from './views/Girl.vue'                   //女频
 import Category from './views/Category.vue'           //分类
 import Ranking from './views/Ranking.vue'             //排行
 import Search from './views/Search.vue'               //搜索
-import User from './views/User.vue'                   //个人中心
-import Header from './module/header.vue'              //头部公用组件  
+import User from './views/User.vue'                   //个人中心 
 import BookDetail from './components/BookDetail.vue'  //书单页跳转的详情页
 import RankList from "./views/ranking/RankList.vue"  //排行榜的公共列表
+import CategoryType from "./components/CategoryType.vue"           //分类详情
 Vue.use(Router)
 
 export default new Router({
@@ -42,7 +42,7 @@ export default new Router({
     {
       path: '/Category',
       name: 'Category',
-      component: Category
+      component: Category,
     },
     {
       path: '/Ranking',
@@ -75,10 +75,12 @@ export default new Router({
       name: 'RankList',
       component: RankList
     },
-    // {
-    //   path: '/about',
-    //   name: 'about',
-    //   component: () => import( './views/About.vue')
-    // }
+    {
+      path:"/Category/CategoryType/:id:name",
+      name:"CategoryType",
+      component:CategoryType
+    },
+   
+
   ]
 })

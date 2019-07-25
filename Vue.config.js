@@ -22,13 +22,14 @@ module.exports = {
                 "pathRewrite":{
                     "^/HD":"/"
                 }
+            },
+            "FL":{
+                "target":"http://read.xiaoshuo1-sm.com",
+                "changeorigin":true,
+                "pathRewrite":{
+                    "^/FL":"/"
+                }
             }
         }
-    },
-   
-       
-           
-        
-   
-
+    }
 }
