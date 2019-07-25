@@ -5,7 +5,6 @@
       <slot name="names"><p>我的书架</p></slot>
       <i class="fa fa fa-pencil" aria-hidden="true" @click="goindex"></i>
     </div>
-    
   </div>
 </template>
 
@@ -22,7 +21,7 @@
   }
 </script>
 
-<style>
+<style scoped>
   .header_div{
         width:100%;
         height:0.8rem;
