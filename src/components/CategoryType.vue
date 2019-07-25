@@ -6,7 +6,7 @@
             <template slot="names"><p class="headTitle">{{this.$route.params.name}}</p></template>
         </headNav>
         <ul v-infinite-scroll="loadMore" infinite-scroll-disabled="loading" infinite-scroll-distance="10">
-            <li v-for="(item,index) in list" :key="index">
+            <li v-for="(item,index) in list" :key="index" @click="goDetail({src:item.cover,name:item.title,author:item.author,desc:item.desc,type:item.category})">
                 <img :src="item.cover">
                 <h3>{{item.title}}</h3>
                 <h5>{{item.author}}</h5>
@@ -64,6 +64,9 @@ export default {
             this.loading = false;
             this.page = 1;
         },
+        goDetail(list){
+            this.$router.push({name:"AllDetails",params:{a:list}})
+        }
     },
     watch:{
         $route:{

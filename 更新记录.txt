@@ -38,3 +38,7 @@
 
 (t)修改/src/components/bookdetail.vue 文件
 (t)修改/src/views/booklist.vue  bookshelf.vue  boy.vue  girl.vue  search.vue五个文件
+
+(z)增加\module/AllDetails.vue
+(z)修改router.vue
+(z)修改\src\components/CategoryType.vue
