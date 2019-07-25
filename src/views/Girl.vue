@@ -115,137 +115,137 @@ export default {
     padding:0;
   }
   .girl_cover_img{
-    width:83px;
-    height:110px;
-    margin-top:20px;
+    width:1.509rem;
+    height:2rem;
+    margin-top:0.364rem;
   }
   .girl_divtop_title{
     color:#333;
-    font-size:14px;
-    width:75px;
-    height:16px;
-    margin-top:45px;
+    font-size:0.255rem;
+    width:1.364rem;
+    height:0.291rem;
+    margin-top:0.818rem;
   }
   .girl_divtop_ul{
     width:100%;
-    height:190px;
+    height:3.455rem;
     overflow: hidden;
-    border-bottom:1px solid rgb(226, 217, 217);
+    border-bottom:0.018rem solid rgb(226, 217, 217);
   }
   .girl_divtop_li{
-    width:80px;
-    height:150px;
+    width:1.455rem;
+    height:2.727rem;
     float:left;
     list-style:none;
-    margin-bottom:20px;
-    margin-left:10px;
+    margin-bottom:0.364rem;
+    margin-left:0.182rem;
   }
   .girl_bookname{
-    font-size:12px;
+    font-size:0.218rem;
     color:#333;
-    width:83px;
+    width:1.509rem;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    margin-top:10px;
+    margin-top:0.182rem;
   }
   .girl_authorname{
-    font-size:12px;
+    font-size:0.218rem;
     color:#999;
-    margin-top:10px;
+    margin-top:0.182rem;
   }
   .girl_divcenter{
     width:100%;
-    height:198px;
+    height:3.6rem;
     overflow: hidden;
   }
   .girl_divcenter_li{
     width:100%;
-    height:55px;
-    margin-left:10px;
+    height:1rem;
+    margin-left:0.182rem;
     position:relative;
-    border-bottom:1px solid rgb(224, 217, 217);
+    border-bottom:0.018rem solid rgb(224, 217, 217);
   }
   .girl_bookname_p{
-    font-size:15px;
+    font-size:0.273rem;
     color:#333;
-    margin-top:10px;
+    margin-top:0.182rem;
   }
   .girl_authorname_p{
-    font-size:12px;
+    font-size:0.218rem;
     color:#999;
-    margin-top:10px;
+    margin-top:0.182rem;
   }
   .girl_statname{
-    width:38px;
-    height:20px;
+    width:0.691rem;
+    height:0.364rem;
     color:rgb(16, 91, 231);
-    border:1px solid rgb(211, 204, 204);
-    font-size:12px;
+    border:0.018rem solid rgb(211, 204, 204);
+    font-size:0.218rem;
     text-align:center;
-    line-height:20px;
+    line-height:0.364rem;
     position:absolute;
-    right:80px;
+    right:1.455rem;
     top:0;
   }
   .girl_classname{
-    width:62px;
-    height:20px;
-    font-size:12px;
+    width:1.127rem;
+    height:0.364rem;
+    font-size:0.218rem;
     color:#999;
     text-align:center;
-    line-height:20px;
-    border:1px solid rgb(207, 199, 199);
+    line-height:0.364rem;
+    border:0.018rem solid rgb(207, 199, 199);
     position:absolute;
-    right:13px;
+    right:0.236rem;
     top:0;
   }
   .girl_change{
     width:100%;
-    height:46px;
+    height:0.836rem;
     background:rgb(210, 218, 219);
     text-align:center;
-    line-height:46px;
-    margin-bottom:20px;
+    line-height:0.836rem;
+    margin-bottom:0.364rem;
   }
   .girl_change>p{
-    font-size:14px;
+    font-size:0.255rem;
     color:#333;
   }
   .girl_divbottom_hot{
-    font-size:14px;
+    font-size:0.255rem;
     color:#333;
-    margin-bottom:10px;
+    margin-bottom:0.182rem;
   }
   .girl_divbottom_li{
-    height:120px;
+    height:2.182rem;
     position: relative;
     list-style:none;
-    margin-left:10px;
+    margin-left:0.182rem;
   }
   .girl_divbottom_bookname{
-    font-size:15px;
+    font-size:0.273rem;
     color:#333;
   }
   .girl_divbottom_authorname{
-    font-size:12px;
+    font-size:0.218rem;
     color:#999;
-    margin-top:15px;
+    margin-top:0.273rem;
   }
   .girl_divbottom_bookinfo{
-    width:252px;
-    height:50px;
-    font-size:12px;
+    width:4.582rem;
+    height:0.909rem;
+    font-size:0.218rem;
     color:#999;
     overflow: hidden;
-    margin-top:10px;
+    margin-top:0.182rem;
   }
   .girl_divbottom_liimg{
-    width:80px;
-    height:100px;
+    width:1.455rem;
+    height:1.818rem;
     position:absolute;
     top:0;
-    right:10px;
+    right:0.182rem;
   }
   .girl_link1{
     text-decoration: none;

@@ -29,3 +29,6 @@
 (c)main.js 中引入加载提示框和自定义指令的模块
 (c)router.js中新增排行榜列表详情页路由
 (c)Vue.config.js中新增后端代理路由
+
+(t)修改/src/components/bookdetail.vue 文件
+(t)修改/src/views/booklist.vue  bookshelf.vue  boy.vue  girl.vue  search.vue五个文件

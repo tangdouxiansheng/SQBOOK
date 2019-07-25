@@ -44,9 +44,9 @@
     created(){
         this.getData();  
     },
-    mounted(){
-       console.log(this.$refs.search.value)
-    },
+    // mounted(){
+    //    console.log(this.$refs.search.value)
+    // },
     methods:{
       getData(){
         this.$axios.get(`/SS/novel/i.php?`,{
@@ -174,4 +174,5 @@
     color:#333;
     font-size:14px;
   }
+ 
 </style>

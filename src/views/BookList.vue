@@ -4,17 +4,18 @@
       <template slot="names"><p class="headTitle">精品书单</p></template>
     </headNav>
     <div class = "booklist_div">
-      <ul class = "booklist_ul">
-        <router-link to="" class = "booklist_link">
-        <li v-for="(item,index) in list" :key="index" class = "booklist_li">
-            <p class = "booklist_li_title">{{item.title}}</p>
-            <p class = "booklist_li_sdesc">{{item.sdesc}}</p>
-            <p class = "booklist_li_tags">{{item.tags}}</p>
-            <img :src="item.items[0].cover" class = "booklist_img_left"/>
-            <img :src="item.items[1].cover" class = "booklist_img_center"/>
-            <img :src="item.items[2].cover" class = "booklist_img_right"/>
-        </li>
-        </router-link>
+      <ul class = "booklist_ul">  
+          <li v-for="(item,index) in list" :key="index" class = "booklist_li">
+            <!-- 跳转页面+传参 -->
+            <router-link :to="'/BookDetail/'+item.id" class = "booklist_link">    
+                <p class = "booklist_li_title">{{item.title}}</p>
+                <p class = "booklist_li_sdesc">{{item.sdesc}}</p>
+                <p class = "booklist_li_tags">{{item.tags}}</p>
+                <img :src="item.items[0].cover" class = "booklist_img_left"/>
+                <img :src="item.items[1].cover" class = "booklist_img_center"/>
+                <img :src="item.items[2].cover" class = "booklist_img_right"/>
+              </router-link>
+          </li> 
       </ul>
     </div>
     <foot/>
@@ -29,7 +30,7 @@ export default {
   },
   data(){
     return{
-      list:[]
+      list:[],
     }
   },
   created(){
@@ -47,7 +48,7 @@ export default {
             _:1563938804243
         }
       }).then((res)=>{
-        this.list = res.data.data
+        this.list = res.data.data;
       })
     }
   }
@@ -81,7 +82,7 @@ export default {
       font-size:0.218rem;
       margin:0.182rem 0;
       width:4.364rem;
-      height:0.545rem;
+      height:0.645rem;
       overflow: hidden;
     }
     .booklist_li_tags{

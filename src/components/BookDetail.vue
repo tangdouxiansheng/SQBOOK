@@ -72,75 +72,75 @@ import headd from '../module/header'
 <style scoped>
     .bookdetail_headd_p{
         color:#333;
-        font-size:16px;
+        font-size:0.291rem;
     }
     .bookdatail_divsdesc{
         width:100%;
-        height:91px;
+        height:1.655rem;
         background:#f8f8f8;
     }
     .bookdatail_sdesc{
-        width:340px;
-        height:66px;
-        font-size:14px;
+        width:6.182rem;
+        height:1.2rem;
+        font-size:0.255rem;
         color:#494949;
         margin:0 auto;
-        padding:10px 0;
+        padding:0.182rem 0;
     }
     .bookdetail_cover{
-        width:56px;
-        height:74px;
+        width:1.018rem;
+        height:1.345rem;
     }
     .bookdetail_li{
         position: relative;
-        margin-left:10px;
+        margin-left:0.182rem;
     }
     .bookdetail_title{
         color:#333;
-        font-size:16px;
+        font-size:0.291rem;
         position: absolute;
-        top:10px;
-        left:80px;
+        top:0.182rem;
+        left:1.455rem;
     }
     .bookdetail_author{
         color:#999;
-        font-size:12px;
+        font-size:0.218rem;
         position: absolute;
-        top:35px;
-        left:80px;
+        top:0.636rem;
+        left:1.455rem;
     }
     .bookdetail_desc{
-        width:340px;
-        height:60px;
+        width:6.182rem;
+        height:1.091rem;
         color:#494949;
-        font-size:14px;
-        margin:10px 0;
+        font-size:0.255rem;
+        margin:0.182rem 0;
         overflow: hidden;
     }
     .bookdetail_desc_all{
-        width:340px;
-        height:220px;
+        width:6.182rem;
+        height:4rem;
         color:#494949;
-        font-size:14px;
-        margin:10px 0;
+        font-size:0.255rem;
+        margin:0.182rem 0;
         overflow: hidden;
     }
     .bookdetail_recomment{
-        margin:20px 0;
-        font-size: 16px;
+        margin:0.364rem 0;
+        font-size: 0.291rem;
         color:#999;
-        width:340px;
+        width:6.182rem;
         font-weight:800;
     }
     .bookdetail_recomment>span{
-        font-size:14px;
+        font-size:0.255rem;
     }
     .bookdetail_logo{
         transform: rotate(90deg);
         position: absolute;
-        bottom:84px;
-        right:10px;
-        font-size:20px;
+        bottom:1.527rem;
+        right:0.182rem;
+        font-size:0.364rem;
         color:#999;
     }
 </style>
