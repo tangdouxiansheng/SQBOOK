@@ -47,7 +47,7 @@
             <h3 class="body_title">精品推荐</h3>
         </div>
         <ul class="body_body">
-            <li v-for="(item,index) in bast" :key="index">
+            <li v-for="(item,index) in bast" :key="index" @click="goDetail({src:item.book_cover,name:item.bookname,author:item.author_name,desc:item.book_info,type:item.class_name})">
                 <img :src="item.book_cover">
                 <p>{{item.bookname}}</p>
                 <span>{{item.author_name}}</span>
@@ -61,13 +61,13 @@
             <h3 class="body_title">女生美文</h3>
         </div>
         <ul class="body_body">
-            <li v-for="(item,index) in girl" :key="index" v-if="index<4">
+            <li v-for="(item,index) in girl" :key="index" v-show="index<4" @click="goDetail({src:item.book_cover,name:item.bookname,author:item.author_name,desc:item.book_info,type:item.class_name})">
                 <img :src="item.book_cover">
                 <p>{{item.bookname}}</p>
                 <span>{{item.author_name}}</span>
             </li>
         </ul>
-        <div class="body_girl" v-for="(item,index) in girl" :key="index" v-if="index>=4">
+        <div class="body_girl" v-for="(item,index) in girl" :key="index" v-show="index>=4" @click="goDetail({src:item.book_cover,name:item.bookname,author:item.author_name,desc:item.book_info,type:item.class_name})">
             <div class="girl_up">
                 <p>{{item.bookname}}</p>
                 <div class="up_tags">
@@ -77,10 +77,7 @@
             </div>
             <div class="girl_under">{{item.book_info}}</div>
         </div>
-        <div class="body_change" @click="change2">
-            换一换
-
-        </div>
+        <div class="body_change" @click="change2">换一换</div>
     </div>
     <div class="index_body">
         <div class="body_header">
@@ -88,13 +85,13 @@
             <h3 class="body_title">男生热文</h3>
         </div>
         <ul class="body_body">
-            <li v-for="(item,index) in boy" :key="index" v-if="index<4">
+            <li v-for="(item,index) in boy" :key="index" v-show="index<4" @click="goDetail({src:item.book_cover,name:item.bookname,author:item.author_name,desc:item.book_info,type:item.class_name})">
                 <img :src="item.book_cover">
                 <p>{{item.bookname}}</p>
                 <span>{{item.author_name}}</span>
             </li>
         </ul>
-        <div class="body_girl" v-for="(item,index) in boy" :key="index" v-if="index>=4">
+        <div class="body_girl" v-for="(item,index) in boy" :key="index" v-show="index>=4" @click="goDetail({src:item.book_cover,name:item.bookname,author:item.author_name,desc:item.book_info,type:item.class_name})">
             <div class="girl_up">
                 <p>{{item.bookname}}</p>
                 <div class="up_tags">
@@ -214,6 +211,9 @@ export default {
         },
         change3(){
             this.getboy();
+        },
+        goDetail(list){
+            this.$router.push({name:"AllDetails",params:{a:list}})
         }
     }
 }

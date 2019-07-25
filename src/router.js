@@ -13,6 +13,7 @@ import User from './views/User.vue'                   //个人中心
 import BookDetail from './components/BookDetail.vue'  //书单页跳转的详情页
 import RankList from "./views/ranking/RankList.vue"  //排行榜的公共列表
 import CategoryType from "./components/CategoryType.vue"           //分类详情
+import AllDetails from "./module/AllDetails.vue"           //书详情页面
 Vue.use(Router)
 
 export default new Router({
@@ -80,7 +81,11 @@ export default new Router({
       name:"CategoryType",
       component:CategoryType
     },
-   
+    {
+      path:"/AllDetails",
+      name:"AllDetails",
+      component:AllDetails
+    },
 
   ]
 })

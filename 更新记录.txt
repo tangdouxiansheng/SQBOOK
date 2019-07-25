@@ -32,18 +32,22 @@
 
 =======
 (z)Vue.config.js中新增代理路由
-(z)修改/src/router.vue 文件
-(z)新增./components/CategoryType.vue文件
+(z)修改/src/router.vue 文件                            //下面更新，可忽略
+(z)新增./components/CategoryType.vue文件               //下面更新，可忽略
 (z)修改/src/view/Category.vue 文件
 
 (t)修改/src/components/bookdetail.vue 文件
 (t)修改/src/views/booklist.vue  bookshelf.vue  boy.vue  girl.vue  search.vue五个文件
 
-(z)增加\module/AllDetails.vue
-(z)修改router.vue
+(z)增加\module/AllDetails.vue                          //下面更新，可忽略
+(z)修改router.js                                       //下面更新，可忽略
 (z)修改\src\components/CategoryType.vue
 
 (t)修改了/src/views/Boy.vue  booklist.vue文件
+
+(z)修改\module/AllDetails.vue
+(z)修改router.js
+(z)修改src/view/index.vue
 
 
 
