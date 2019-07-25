@@ -30,5 +30,11 @@
 (c)router.js中新增排行榜列表详情页路由
 (c)Vue.config.js中新增后端代理路由
 
+=======
+(z)Vue.config.js中新增代理路由
+(z)修改/src/router.vue 文件
+(z)新增./components/CategoryType.vue文件
+(z)修改/src/view/Category.vue 文件
+
 (t)修改/src/components/bookdetail.vue 文件
 (t)修改/src/views/booklist.vue  bookshelf.vue  boy.vue  girl.vue  search.vue五个文件
