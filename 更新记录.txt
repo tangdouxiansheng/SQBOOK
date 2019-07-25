@@ -17,3 +17,7 @@
 （Z）修改module/foot.vue；和header.vue文件
 
 (t)修改/src/view/Boy.vue  girl.vue  booklist.vue 文件
+
+(t)修改/src/view/index.vue 文件
+(t)新增/src/components/bookdetail.vue 文件
+(t)修改/src/router.vue 文件

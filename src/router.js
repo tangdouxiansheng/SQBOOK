@@ -11,6 +11,7 @@ import Ranking from './views/Ranking.vue'             //排行
 import Search from './views/Search.vue'               //搜索
 import User from './views/User.vue'                   //个人中心
 import Header from './module/header.vue'              //头部公用组件  
+import BookDetail from './components/BookDetail.vue'  //书单页跳转的详情页
 Vue.use(Router)
 
 export default new Router({
@@ -63,7 +64,11 @@ export default new Router({
       name: 'User',
       component: User
     },
-   
+    {
+      path:'/BookDetail/:id',
+      name: 'BookDetail',
+      component: BookDetail
+    }
     // {
     //   path: '/about',
     //   name: 'about',

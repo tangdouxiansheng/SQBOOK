@@ -15,11 +15,13 @@
     </div>
     <div class = "index_click">
         <router-link to="/Category">
-            <i class="fa fa-calculator fbb" aria-hidden="true"></i>
+        <!-- fa fa-calculator fa-spin-->
+            <i class="fa fa-indent fbb" aria-hidden="true"></i>
             <p>分类</p>
         </router-link> 
         <router-link to="/Ranking">
-            <i class="fa fa-bar-chart fbb" aria-hidden="true"></i>
+        <!-- fa-bar-chart -->
+            <i class="fa fa-trophy fbb" aria-hidden="true"></i>
             <p>排行</p>
         </router-link>
         <router-link to="/Boy">
@@ -238,7 +240,7 @@ export default {
         margin-left:0.364rem;
     }
     .index_nav a{
-        color:rgb(238, 122, 14);
+        color:rgb(17, 192, 204);
         float:right;
         margin-right:0.364rem;
     }
@@ -253,11 +255,12 @@ export default {
         border-bottom:0.018rem solid rgb(212, 209, 209);
     }
     .index_click a{
-        color:rgb(238, 122, 14);
+        color:rgb(17, 169, 180);
+        // rgb(238, 122, 14)
         display: flex;
         flex-direction: column;
         text-align: center;
-        font-size:0.218rem;
+        font-size:0.278rem;
         text-decoration: none;
         margin-top:0.182rem;
         margin-bottom:0.364rem;
@@ -266,7 +269,7 @@ export default {
         margin-top:0.091rem;
     }
     .fbb{
-        font-size:0.436rem;
+        font-size:0.476rem;
     }
     .index_binner{
         width:100%;
