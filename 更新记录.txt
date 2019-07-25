@@ -45,9 +45,12 @@
 
 (t)修改了/src/views/Boy.vue  booklist.vue文件
 
-(z)修改\module/AllDetails.vue
-(z)修改router.js
-(z)修改src/view/index.vue
+(z)修改\module/AllDetails.vue 封装(假)详情页面的最后一次更新
+(z)修改router.js 增加了详情页面的路由
+(z)修改src/view/index.vue 主页页面增加点击进入详情页面，为最后更新
+(z)修改src/view/ranking 排行版增加点击进入详情页面
+(z)修改/src/views/Girl.vue 女频增加点击进入详情页面，优化样式
+(z)修改/src/views/Boy.vue 男频优化样式
 
 
 

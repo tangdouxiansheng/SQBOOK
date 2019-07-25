@@ -8,25 +8,23 @@
     <div class = "girl_divtop">
       <p class = "girl_divtop_title">主编力荐</p>
       <ul class = "girl_divtop_ul">
-        <router-link to="" class = "girl_link1">
-          <li v-for="(item,index) in arr.content" :key="index" class = "girl_divtop_li">
+          <li v-for="(item,index) in arr.content" :key="index" class = "girl_divtop_li"  @click="go({name:item.bookname,src:item.book_cover,author:item.author_name,
+        desc:item.book_info,type:item.class_name})">
               <img :src="item.book_cover" class = "girl_cover_img"/>
               <p class = "girl_bookname">{{item.bookname}}</p>
               <p class = "girl_authorname">{{item.author_name}}</p>
           </li>
-        </router-link>
       </ul>
       <!--  -->
       <div  class = "girl_divcenter">
         <ul>
-          <router-link to="" class = "girl_link2">
-            <li v-for="(item,index) in arr.content" :key="index" class = "girl_divcenter_li">
+            <li v-for="(item,index) in arr.content" :key="index" class = "girl_divcenter_li" @click="go({name:item.bookname,src:item.book_cover,author:item.author_name,
+        desc:item.book_info,type:item.class_name})">
               <p class = "girl_bookname_p">{{item.bookname}}</p>
               <p class = "girl_authorname_p">{{item.author_name}}</p>
               <p class = "girl_statname">{{item.stat_name}}</p>
               <p class = "girl_classname">{{item.class_name}}</p>
             </li>
-          </router-link>
         </ul>
       </div>
       <!-- 换一换功能 -->
@@ -39,14 +37,13 @@
       <div class = "girl_divbottom">
         <p class = "girl_divbottom_hot">热门女生分类</p>
         <ul>
-          <router-link to="" class = "girl_link3">
-            <li v-for="(item,index) in list" :key="index" class = "girl_divbottom_li">
+            <li v-for="(item,index) in list" :key="index" class = "girl_divbottom_li" @click="go({name:item.bookname,src:item.book_cover,author:item.author_name,
+        desc:item.book_info,type:item.class_name})">
                 <p class = "girl_divbottom_bookname">{{item.bookname}}</p>
                 <p class = "girl_divbottom_bookinfo">{{item.book_info}}</p>
                 <p class = "girl_divbottom_authorname">{{item.author_name}}</p>
                 <img :src="item.book_cover" class = "girl_divbottom_liimg"/>
             </li>
-          </router-link>
         </ul>
       </div>
     </div>
@@ -102,7 +99,9 @@ export default {
       this.id = 1563949022094?1563977597778:1563977408179;
       this.getData();
       this.$refs.class = "fa fa-refresh fa-spin"
-     
+    },
+    go(obj){
+      this.$router.push({name:'AllDetails',params:{a:obj}})
     },
   }
 }
@@ -133,7 +132,7 @@ export default {
     border-bottom:0.018rem solid rgb(226, 217, 217);
   }
   .girl_divtop_li{
-    width:1.455rem;
+    width:1.685rem;
     height:2.727rem;
     float:left;
     list-style:none;

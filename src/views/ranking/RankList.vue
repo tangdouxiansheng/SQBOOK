@@ -22,7 +22,7 @@
         <ul v-infinite-scroll="loadMore"
             infinite-scroll-disabled="loading"
             infinite-scroll-distance="20">
-            <li v-for="(item,index) in list" :key="index">
+            <li v-for="(item,index) in list" :key="index" @click="goDetail({src:item.cover,name:item.title,author:item.author,desc:item.desc,type:item.category})">
                 <div class="detail_left"><img :src="item.cover" alt=""></div>
                 <div class="detail_center">
                     <h4>{{item.title}}</h4>
@@ -158,6 +158,9 @@ export default {
             }else{
                 this.tag = false;
             } 
+        },
+        goDetail(list){
+            this.$router.push({name:"AllDetails",params:{a:list}})
         }
     } 
 }

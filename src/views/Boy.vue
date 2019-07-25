@@ -11,11 +11,9 @@
         <li v-for="(item,index) in arr.content" :key="index" class = "girl_divtop_li" 
         @click="go({name:item.bookname,src:item.book_cover,author:item.author_name,
         desc:item.book_info,type:item.class_name})">
-          <router-link to="" class = "girl_link1">
               <img :src="item.book_cover" class = "girl_cover_img"/>
               <p class = "girl_bookname">{{item.bookname}}</p>
               <p class = "girl_authorname">{{item.author_name}}</p>
-          </router-link>
         </li>
       </ul>
       <!--  -->
@@ -24,12 +22,10 @@
             <li v-for="(item,index) in arr.content" :key="index" class = "girl_divcenter_li" 
             @click="go({name:item.bookname,desc:item.book_info,type:item.class_name,
             src:item.book_cover,author:item.author_name})">
-              <router-link to="" class = "girl_link2">
                 <p class = "girl_bookname_p">{{item.bookname}}</p>
                 <p class = "girl_authorname_p">{{item.author_name}}</p>
                 <p class = "girl_statname">{{item.stat_name}}</p>
                 <p class = "girl_classname">{{item.class_name}}</p>
-              </router-link>
             </li>
         </ul>
       </div>
@@ -45,12 +41,10 @@
         <ul>
           <li v-for="(item,index) in list" :key="index" class = "girl_divbottom_li" 
           @click="go({name:item.bookname,src:item.book_cover,author:item.author_name,desc:item.book_info,type:item.class_name})">
-            <router-link to="" class = "girl_link3">
                 <p class = "girl_divbottom_bookname">{{item.bookname}}</p>
                 <p class = "girl_divbottom_bookinfo">{{item.book_info}}</p>
                 <p class = "girl_divbottom_authorname">{{item.author_name}}</p>
                 <img :src="item.book_cover" class = "girl_divbottom_liimg"/>
-              </router-link>
           </li>
         </ul>
       </div>
@@ -140,7 +134,7 @@ export default {
     border-bottom:0.018rem solid rgb(226, 217, 217);
   }
   .girl_divtop_li{
-    width:1.455rem;
+    width:1.685rem;
     height:2.727rem;
     float:left;
     list-style:none;
