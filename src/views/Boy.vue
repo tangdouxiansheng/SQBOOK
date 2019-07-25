@@ -8,7 +8,9 @@
     <div class = "girl_divtop">
       <p class = "girl_divtop_title">主编力荐</p>
       <ul class = "girl_divtop_ul">
-        <li v-for="(item,index) in arr.content" :key="index" class = "girl_divtop_li" @click="go({name:item.bookname,src:item.book_cover,author:item.author_name})">
+        <li v-for="(item,index) in arr.content" :key="index" class = "girl_divtop_li" 
+        @click="go({name:item.bookname,src:item.book_cover,author:item.author_name,
+        desc:item.book_info,type:item.class_name})">
           <router-link to="" class = "girl_link1">
               <img :src="item.book_cover" class = "girl_cover_img"/>
               <p class = "girl_bookname">{{item.bookname}}</p>
@@ -19,7 +21,9 @@
       <!--  -->
       <div  class = "girl_divcenter">
         <ul>
-            <li v-for="(item,index) in arr.content" :key="index" class = "girl_divcenter_li" @click="go({name:item.bookname,desc:item.stat_name,type:item.class_name,src:item.book_cover,author:item.author_name})">
+            <li v-for="(item,index) in arr.content" :key="index" class = "girl_divcenter_li" 
+            @click="go({name:item.bookname,desc:item.book_info,type:item.class_name,
+            src:item.book_cover,author:item.author_name})">
               <router-link to="" class = "girl_link2">
                 <p class = "girl_bookname_p">{{item.bookname}}</p>
                 <p class = "girl_authorname_p">{{item.author_name}}</p>
@@ -40,7 +44,7 @@
         <p class = "girl_divbottom_hot">热门男生分类</p>
         <ul>
           <li v-for="(item,index) in list" :key="index" class = "girl_divbottom_li" 
-          @click="go({name:item.bookname,src:item.book_cover,author:item.author_name})">
+          @click="go({name:item.bookname,src:item.book_cover,author:item.author_name,desc:item.book_info,type:item.class_name})">
             <router-link to="" class = "girl_link3">
                 <p class = "girl_divbottom_bookname">{{item.bookname}}</p>
                 <p class = "girl_divbottom_bookinfo">{{item.book_info}}</p>
@@ -97,7 +101,6 @@ export default {
       }).then((res)=>{
         this.list = res.data.data.module[6].content.data[0].content
         this.arr = res.data.data.module[1]
-        console.log(this.arr)
       })
     },
     change(){
@@ -106,7 +109,7 @@ export default {
       this.$refs.class = "fa fa-refresh fa-spin"
     },
     go(obj){
-      this.$route.push({name:'/AllDetails',params:{a:obj}})
+      this.$router.push({name:'AllDetails',params:{a:obj}})
     },
   }
 }

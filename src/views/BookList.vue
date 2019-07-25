@@ -5,7 +5,7 @@
     </headNav>
     <div class = "booklist_div">
       <ul class = "booklist_ul">  
-          <li v-for="(item,index) in list" :key="index" class = "booklist_li">
+          <li v-for="(item,index) in list" :key="index" class = "booklist_li"> 
             <!-- 跳转页面+传参 -->
             <router-link :to="'/BookDetail/'+item.id" class = "booklist_link">    
                 <p class = "booklist_li_title">{{item.title}}</p>

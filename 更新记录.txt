@@ -43,4 +43,7 @@
 (z)修改router.vue
 (z)修改\src\components/CategoryType.vue
 
-(t)修改了/src/views/Boy.vue 文件
+(t)修改了/src/views/Boy.vue  booklist.vue文件
+
+
+
