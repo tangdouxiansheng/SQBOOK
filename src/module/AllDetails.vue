@@ -23,7 +23,9 @@
             <div class="detail_button">
                 <button>开始阅读</button>
                 <button>离线下载</button>
-                <button>加书架</button>
+                <button @click="join({src:list.src,name:list.name})" :class="{'btn':bool}" :disabled="bool"> 
+                    {{!bool ? '加书架':'已添加'}}
+                </button>
             </div>
             <p v-if="list.desc" class="detail_desc">{{list.desc}}</p>
 
@@ -48,6 +50,8 @@
 <script>
 import headNav from "../module/header.vue"
 import { setInterval } from 'timers';
+import Msg from './toast'
+var msg = new Msg()   
 export default {
     components:{
         headNav
@@ -55,7 +59,8 @@ export default {
     data(){
         return{
             list:{},
-            data:[]
+            data:[],
+            bool:false
         }
     },
     created(){
@@ -73,7 +78,13 @@ export default {
         },
         goDetail(list){
             this.list = list
+        },
+        join(obj){
+            this.$store.commit("change",obj)
+            this.bool = true;
+            msg.showMsg('已加入书架!','middle',1000)
         }
+
     },
     watch:{
         $route:{
@@ -205,6 +216,12 @@ export default {
             border-top:1px solid #fafafa;
             border-bottom:8px solid #f0f0f2;
         }
+    }
+    .btn{
+        background: #e6e7ed !important;
+        color:#c6c7cc !important;
+        border:none !important;
+        outline: none;
     }
 </style>
 
