@@ -53,4 +53,7 @@
 (z)修改/src/views/Boy.vue 男频优化样式
 
 
-
+(c)更改首页图标样式
+(c)更改BookShelf.vue   新增加入书架功能  有小bug未解决
+(c)更改module/AllDetails.vue中加入书架按钮功能
+(c)新建dev分支   新建tangdou/jiyueji/answer分支
